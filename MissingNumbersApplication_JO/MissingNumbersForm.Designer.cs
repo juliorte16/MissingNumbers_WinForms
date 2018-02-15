@@ -30,13 +30,13 @@
         {
             this.LblTamañoLista1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxbTamañoLista1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxbList1 = new System.Windows.Forms.TextBox();
+            this.TxbTamanoLista1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxbList2 = new System.Windows.Forms.TextBox();
+            this.TxbTamanoLista2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnMissingNumbers = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -49,14 +49,14 @@
             this.LblTamañoLista1.AutoSize = true;
             this.LblTamañoLista1.Location = new System.Drawing.Point(50, 16);
             this.LblTamañoLista1.Name = "LblTamañoLista1";
-            this.LblTamañoLista1.Size = new System.Drawing.Size(46, 13);
+            this.LblTamañoLista1.Size = new System.Drawing.Size(27, 13);
             this.LblTamañoLista1.TabIndex = 1;
-            this.LblTamañoLista1.Text = "Tamaño";
+            this.LblTamañoLista1.Text = "Size";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.TxbTamañoLista1);
+            this.groupBox1.Controls.Add(this.TxbList1);
+            this.groupBox1.Controls.Add(this.TxbTamanoLista1);
             this.groupBox1.Controls.Add(this.LblTamañoLista1);
             this.groupBox1.Location = new System.Drawing.Point(22, 12);
             this.groupBox1.Name = "groupBox1";
@@ -65,25 +65,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "List 1";
             // 
-            // TxbTamañoLista1
+            // TxbList1
             // 
-            this.TxbTamañoLista1.Location = new System.Drawing.Point(102, 16);
-            this.TxbTamañoLista1.Name = "TxbTamañoLista1";
-            this.TxbTamañoLista1.Size = new System.Drawing.Size(85, 20);
-            this.TxbTamañoLista1.TabIndex = 3;
+            this.TxbList1.Location = new System.Drawing.Point(6, 45);
+            this.TxbList1.Multiline = true;
+            this.TxbList1.Name = "TxbList1";
+            this.TxbList1.Size = new System.Drawing.Size(540, 47);
+            this.TxbList1.TabIndex = 4;
             // 
-            // textBox2
+            // TxbTamanoLista1
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 45);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(540, 47);
-            this.textBox2.TabIndex = 4;
+            this.TxbTamanoLista1.Location = new System.Drawing.Point(102, 16);
+            this.TxbTamanoLista1.Name = "TxbTamanoLista1";
+            this.TxbTamanoLista1.Size = new System.Drawing.Size(85, 20);
+            this.TxbTamanoLista1.TabIndex = 3;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.TxbList2);
+            this.groupBox2.Controls.Add(this.TxbTamanoLista2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(22, 116);
             this.groupBox2.Name = "groupBox2";
@@ -92,49 +92,50 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "List 2";
             // 
-            // textBox1
+            // TxbList2
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 42);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(540, 51);
-            this.textBox1.TabIndex = 4;
+            this.TxbList2.Location = new System.Drawing.Point(6, 42);
+            this.TxbList2.Multiline = true;
+            this.TxbList2.Name = "TxbList2";
+            this.TxbList2.Size = new System.Drawing.Size(540, 51);
+            this.TxbList2.TabIndex = 4;
             // 
-            // textBox3
+            // TxbTamanoLista2
             // 
-            this.textBox3.Location = new System.Drawing.Point(102, 13);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(85, 20);
-            this.textBox3.TabIndex = 3;
+            this.TxbTamanoLista2.Location = new System.Drawing.Point(102, 13);
+            this.TxbTamanoLista2.Name = "TxbTamanoLista2";
+            this.TxbTamanoLista2.Size = new System.Drawing.Size(85, 20);
+            this.TxbTamanoLista2.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(50, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tamaño";
+            this.label1.Text = "Size";
             // 
-            // button1
+            // BtnMissingNumbers
             // 
-            this.button1.Location = new System.Drawing.Point(6, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Missing Numbers";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnMissingNumbers.Location = new System.Drawing.Point(6, 19);
+            this.BtnMissingNumbers.Name = "BtnMissingNumbers";
+            this.BtnMissingNumbers.Size = new System.Drawing.Size(110, 32);
+            this.BtnMissingNumbers.TabIndex = 7;
+            this.BtnMissingNumbers.Text = "Missing Numbers";
+            this.BtnMissingNumbers.UseVisualStyleBackColor = true;
+            this.BtnMissingNumbers.Click += new System.EventHandler(this.BtnMissingNumbers_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.BtnMissingNumbers);
             this.groupBox3.Location = new System.Drawing.Point(22, 220);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(552, 96);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Salida";
+            this.groupBox3.Text = "Output";
             // 
             // textBox4
             // 
@@ -154,6 +155,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "MissingNumbersForm";
             this.Text = "Missing Numers Julián Ortega Orozco";
+            this.Load += new System.EventHandler(this.MissingNumbersForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -168,13 +170,13 @@
 
         private System.Windows.Forms.Label LblTamañoLista1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox TxbTamañoLista1;
+        private System.Windows.Forms.TextBox TxbList1;
+        private System.Windows.Forms.TextBox TxbTamanoLista1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxbList2;
+        private System.Windows.Forms.TextBox TxbTamanoLista2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnMissingNumbers;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox4;
     }
