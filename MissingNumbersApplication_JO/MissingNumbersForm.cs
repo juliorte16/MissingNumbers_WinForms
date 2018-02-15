@@ -18,7 +18,6 @@ namespace MissingNumbersApplication_JO
         private List<int> list2;
         private string list1Str;
         private string list2Str;
-        private List<int> list3;
         private string list3Str;
 
         public MissingNumbersForm()
@@ -54,7 +53,30 @@ namespace MissingNumbersApplication_JO
 
         private void GetMissingNumbers()
         {
-                            
+
+            var result = from item in list1.ToArray()
+                         group item by item into g
+                         select new
+                         {
+                             caracter = g.Key,
+                             repeticiones = g.Count()
+                         };
+            var result2 = from item in list2.ToArray()
+                         group item by item into g
+                         select new
+                         {
+                             caracter = g.Key,
+                             repeticiones = g.Count()
+                         };
+
+            var result3 = result2.Except(result).ToList();
+
+            foreach (var item in result3)
+            {
+                list3Str += item.caracter.ToString() + " ";
+            }
+
+            TxbMissingNumbers.Text = list3Str;
         }
     }
 }

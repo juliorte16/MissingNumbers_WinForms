@@ -38,7 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnMissingNumbers = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxbMissingNumbers = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,7 +128,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.TxbMissingNumbers);
             this.groupBox3.Controls.Add(this.BtnMissingNumbers);
             this.groupBox3.Location = new System.Drawing.Point(22, 220);
             this.groupBox3.Name = "groupBox3";
@@ -137,13 +137,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Output";
             // 
-            // textBox4
+            // TxbMissingNumbers
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 19);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(424, 72);
-            this.textBox4.TabIndex = 0;
+            this.TxbMissingNumbers.Location = new System.Drawing.Point(122, 19);
+            this.TxbMissingNumbers.Multiline = true;
+            this.TxbMissingNumbers.Name = "TxbMissingNumbers";
+            this.TxbMissingNumbers.Size = new System.Drawing.Size(424, 72);
+            this.TxbMissingNumbers.TabIndex = 0;
             // 
             // MissingNumbersForm
             // 
@@ -178,7 +178,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnMissingNumbers;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxbMissingNumbers;
     }
 }
 
