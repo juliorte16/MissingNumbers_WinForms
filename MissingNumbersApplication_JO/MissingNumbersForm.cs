@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MissingNumbersApplication_JO
 {
-    public partial class Form1 : Form
+    public partial class MissingNumbersForm : Form
     {
-        public Form1()
+        public MissingNumbersForm()
         {
             InitializeComponent();
         }
